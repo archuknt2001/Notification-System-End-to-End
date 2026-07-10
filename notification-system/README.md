@@ -1,3 +1,38 @@
+# 🔔 Notification System End-to-End
+
+
+## 👥 Team Members
+
+| Name           | GitHub                      |
+|----------------|---------|
+| Archana Kumari | @archuknt2001 |
+| Kashish Zehra  | @cipher-dev-04 |
+| Muskan Perween | @muskanperweenmp0760-art |
+| Nikee Kumari   | [@nikee847422|
+
+---
+
+## 📖 Project Description
+A full-stack, tenant-aware notification system that delivers real-time notifications to the right users based on application events. The system is designed to provide secure, reliable, and scalable notification management with a seamless user experience.
+
+---
+
+## 🎯 Objective
+To build a secure and scalable notification system that enables real-time communication, improves user engagement, and ensures every notification reaches the intended user efficiently.
+
+---
+
+
+## 🏢 Organization
+#Digitace Tech Solution
+https://www.digitacetechsolutions.com/
+
+---
+
+
+## 🚀 Project Status
+🚧 Developed
+
 # AI-Native CRM Notification System
 
 A production-ready, tenant-aware notification system built for AI-native CRM platforms used by Talent and Influencer Agencies.
