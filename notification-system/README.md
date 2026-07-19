@@ -8,7 +8,7 @@
 | Archana Kumari | @archuknt2001 |
 | Kashish Zehra  | @cipher-dev-04 |
 | Muskan Perween | @muskanperweenmp0760-art |
-| Nikee Kumari   | [@nikee847422|
+| Nikee Kumari   | @nikee847422|
 
 ---
 
