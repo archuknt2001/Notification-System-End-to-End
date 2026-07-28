@@ -77,11 +77,18 @@ def create_app() -> FastAPI:
 
     # ------------------------------------------------------------------
     # CORS
+    # Allow all origins if settings.allowed_origins contains "*",
+    # otherwise use the explicit list from config.
+    # On Railway set: ALLOWED_ORIGINS=*
+    # On local dev: ALLOWED_ORIGINS=["http://localhost:5173"]
     # ------------------------------------------------------------------
+    cors_origins = settings.allowed_origins
+    allow_all = cors_origins == ["*"] or "*" in cors_origins
+
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=settings.allowed_origins,
-        allow_credentials=True,
+        allow_origins=["*"] if allow_all else cors_origins,
+        allow_credentials=not allow_all,  # credentials not allowed with wildcard
         allow_methods=["*"],
         allow_headers=["*"],
     )
