@@ -2,13 +2,17 @@
  * API service layer.
  * All HTTP calls go through this module — components never use axios directly.
  *
- * Every request automatically includes X-Tenant-Id and X-User-Id headers
- * from the current identity object { tenantId, userId }.
+ * BASE_URL resolution:
+ *   - In production (Vercel): reads VITE_API_URL environment variable
+ *     e.g. VITE_API_URL=https://your-backend.railway.app/api/v1
+ *   - In local dev: falls back to '/api/v1' which is proxied by Vite to localhost:8000
+ *
+ * Set VITE_API_URL in Vercel dashboard → Project Settings → Environment Variables
  */
 
 import axios from 'axios'
 
-const BASE_URL = '/api/v1'
+const BASE_URL = import.meta.env.VITE_API_URL || '/api/v1'
 
 /** Build an axios instance scoped to a specific identity. */
 function client(identity) {
