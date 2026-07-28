@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6271faed-0633-4acd-92f9-d8ca342d94d4" /># 🔔 Notification System End-to-End
+# 🔔 Notification System End-to-End
 
 
 ## 👥 Team Members
